@@ -1,0 +1,171 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(44, 41, 62);
+    font-family: 'Times New Roman', Times, serif;
+    color: #d8d3d3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+/* ---------- HEADER ---------- */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 1rem;
+}
+
+input {
+    flex: 1;
+    font-size: 1rem;
+    background-color: rgb(82, 66, 128);
+    border: none;
+    padding: 0.6rem 1rem;
+    color: white;
+    border-radius: 10px;
+    outline: none;
+}
+
+#search-icon {
+    font-size: 1.5rem;
+    color: rgb(200, 200, 200);
+    cursor: pointer;
+    transition: color 0.2s;
+}
+#search-icon:hover {
+    color: white;
+}
+
+.error {
+    display: none;
+    color: rgb(191, 51, 51);
+    text-align: left;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+
+/* ---------- MAIN CONTENT ---------- */
+#display {
+    display: none;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    padding: 1rem;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.weather-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.weather-icon {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.images {
+    width: 150px;
+    height: auto;
+}
+
+/* ---------- WEATHER INFO ---------- */
+.weather-info {
+    margin-top: 1rem;
+}
+
+.temp {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.city {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.weather-details {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.weather-details div {
+    flex: 1 1 120px;
+    background: rgba(255, 255, 255, 0.08);
+    padding: 0.8rem;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.details-icon {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.weather-details h2 {
+    font-size: 1rem;
+    margin-bottom: 0.3rem;
+}
+
+.weather-details p {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 480px) {
+    input {
+        font-size: 0.9rem;
+        padding: 0.5rem;
+    }
+
+    #search-icon {
+        font-size: 1.3rem;
+    }
+
+    .weather-name {
+        font-size: 1.3rem;
+    }
+
+    .temp {
+        font-size: 1.8rem;
+    }
+
+    .city {
+        font-size: 1.2rem;
+    }
+
+    .images {
+        width: 120px;
+    }
+
+    .weather-details {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .weather-details div {
+        width: 100%;
+        max-width: 250px;
+    }
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather-app</title>
+    <link rel="stylesheet" href="index.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+</head>
+<body>
+    <header>
+        <input type="text" id="search" placeholder="enter city name">
+        <i class="ri-search-line" id="search-icon"></i>
+        <p class="error">Invalid city Name</p>
+    </header>
+
+    <main id="display">
+        <h2 class="weather-name">Sunny</h2>
+        <section class="weather-icon">
+
+            <img src="images/drizzle.png" alt="" class="images">
+            
+        </section>
+
+        <section class="weather-info">
+            <h1 class="temp">22°C</h1>
+            <h1 class="city">New York</h1>
+
+            <div class="weather-details">
+
+                <div>
+
+                    <div class="details-icon">
+                         <i class="ri-windy-fill"></i> 
+                    </div>
+                     
+                    <h2>Wind speed</h2>
+                    <p id="wind-speed"> 20km/h</p>
+                    
+                   
+                </div>
+
+                <div>
+                    
+                   
+                </div>
+
+                <div>
+
+                    <div class="details-icon">
+                        <i class="ri-water-percent-line" ></i> 
+                    </div>
+                     
+                    <h2>Humidity</h2>
+                    <p id="humidity"> 20%</p>
+                    
+                   
+                </div>
+                
+            </div>
+            
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
