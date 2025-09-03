@@ -31,31 +31,31 @@ async function getWeather(cityName) {
             humidity.innerHTML = data.main.humidity + '%'
 
             if (data.weather[0].main == 'Clouds') {
-                images.src = 'clouds.png'
+                images.src = './images/clouds.png'
             }
             else if (data.weather[0].main == 'Dust') {
-                images.src = 'dust.png'
+                images.src = './images/dust.png'
             }
             else if (data.weather[0].main == 'Rain') {
-                images.src = 'rain.png'
+                images.src = './images/rain.png'
             }
             else if (data.weather[0].main == 'Snow') {
-                images.src = 'snow.jpeg'
+                images.src = './images/snow.jpeg'
             }
             else if (data.weather[0].main == 'Mist') {
-                images.src = 'mist.png'
+                images.src = './images/mist.png'
             }
             else if (data.weather[0].main == 'Drizzle') {
-                images.src = 'drizzle.png'
+                images.src = './images/drizzle.png'
             }
             else if (data.weather[0].main == 'Sunny') {
-                images.src = 'sun.png'
+                images.src = './images/sun.png'
             }
             else if (data.weather[0].main == 'Clear') {
-                images.src = 'sun.png'
+                images.src = './images/sun.png'
             }
             else {
-                images.src = 'sun.png'
+                images.src = './images/sun.png'
             }
 
             document.getElementById('display').style.display = 'block'
@@ -92,3 +92,4 @@ searchIcon.addEventListener('click', () => {
 
 
 })
+
